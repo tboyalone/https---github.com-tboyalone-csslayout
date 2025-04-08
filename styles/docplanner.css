@@ -376,6 +376,10 @@ h1 {
   transition: transform 0.3s ease;
 }
 
+.section-openings-content-cities-item:hover{
+box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+}
+
 .section-join-us{
   margin-top: 100px;
   display: flex;
