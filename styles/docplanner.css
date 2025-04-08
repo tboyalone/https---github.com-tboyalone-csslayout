@@ -3,10 +3,8 @@ body {
   font-family: Work Sans, Arial, sans-serif;
 }
 h1 {
-  font-size: 32px;
   color: #333;
   font-weight: 300;
-  color: #00b39b;
 }
 .header-content {
   padding: 20px;
@@ -21,9 +19,19 @@ h1 {
   margin-top: 10px;
   margin-right: 200px;
 }
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
 .nav-list li {
   display: inline;
   margin-right: 20px;
+}
+.nav-list a:hover{
+  font-weight: bold;
 }
 .fulllogo{
   width: 280px;
@@ -31,11 +39,22 @@ h1 {
   margin-right: 20px;
   margin-left: 200px;
 }
+.span-home{
+  color:#00B39B
+}
 .logo-area {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.logo-area-h1{
+  font-weight: 300;
+  font-size: 32px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .logo-area-image {
   width: 40px;
@@ -48,9 +67,364 @@ h1 {
   justify-content: center;
 }
 .logo-area-content-text{
-  width: 400px;
+  width: 500px;
   height: auto;
-  text-align: center;
+  text-align: left;
   font-weight: 300;
   margin-right: 20px;
+  margin-bottom: 80px;
+}
+.section-office {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.section-office-patients,
+.section-office-doctors, 
+.section-office-clinics {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+  border-radius: 12px; 
+}
+.section-office-patients{
+ background-color: #00CCB1;
+ height: 360px;
+ width: 310px;
+}
+
+.section-office-doctors {
+  background-color: #3D83DF;
+  height: 360px;
+  width: 290px;
+}
+
+.section-office-clinics {
+  background-color: #1B2734;
+  height: 360px;
+  width: 310px;
+}
+
+.section-office-doctors-image,
+.section-office-patients-image,
+.section-office-clinics-image {
+  width: 30px;
+  height: auto;
+  margin-bottom: 12px;
+  align-items: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.section-office-patients-h1,
+.section-office-doctors-h1,
+.section-office-clinics-h1 {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 400;
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  color: white;
+}
+.section-office-patients-p,
+.section-office-doctors-p,
+.section-office-clinics-p{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.dropdown-list-doctors, .dropdown-list-clinics{
+  color: white;
+  align-items: left;
+  margin-top: 20px;
+  margin-left: 45px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+.dropdown-list-patients{
+  color: white;
+    align-items: left;
+    margin-top: 80px;
+    margin-left: 45px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.logos-area-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.logos-area-content-text{
+  width: 200px;
+  height: auto;
+  text-align: left;
+  margin-right: 300px;
+  margin-bottom: 80px
+}
+
+.logos-area-content-text-h1{
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.logos-area-content-logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 20px;
+}
+
+.logos-area-content-logos-image{
+  width: 80px;
+}
+
+.section-statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  background-color: #D0FAF4;
+  column-gap: 50px;
+  padding-top: 30px;
+}
+
+.section-statistics-area{
+  width: 500px;
+  height: 500px;
+}
+.section-statistics-area-h1{
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: Left;
+  width: 300px;
+}
+
+.section-statistics-area-p{
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 0px;
+  text-align: Left;
+  width: 450px;
+}
+
+.section-statistics-area-image{
+  align-items: right;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 50px;
+  padding-top: 75px;
+}
+
+.section-statistics-area-content{
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding-bottom: 50px;
+}
+
+.section-statistics-area-content-grp1{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  row-gap: 15px;
+}
+
+.section-statistics-area-content-grp2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  padding-bottom: 30px;
+}
+
+.section-statistics-area-content-item1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 200px;
+  height: 250px;
+}
+
+.section-statistics-area-content-item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 200px;
+  height: 250px;
+}
+
+.section-statistics-area-content-item-image{
+  width: 30px;
+  height: auto;
+  margin-top: 15px;
+  align-items: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.section-statistics-area-content-item-h1{
+  text-align: center;
+  font-size: 25px;
+}
+.section-statistics-area-content-item-p{
+  text-align: center;
+  font-size: 11px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.section-openings{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section-openings-content-h1{
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-openings-content-p{
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 0px;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 120px;
+}
+.section-openings-content-cities{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section-openings-content-cities-item-text{
+  display: flex;
+  justify-content:space-between;
+}
+
+.section-openings-content-cities-item-text-h1{
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #00b39b#747474;
+  margin-left: 20px;
+}
+.section-opening-button{
+  width: 100px;
+  height: 35px;
+  margin-top: 15px;
+  background-color: #3D83DF;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.section-opening-button:hover, .section-openings-content-cities-item img:hover{
+  background-color: #6c64c7;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.section-openings-content-cities-item-text-h1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.section-join-us{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-join-us-h1{
+  font-size: 30px;
+}
+.section-join-us-button{
+    width: 250px;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #3D83DF;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.section-join-us-button:hover{
+  background-color: #6c64c7;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.footer{
+  background-color: #F8F8F8;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.footer-p{
+  margin-right: 0px;
+  text-spacing-trim: 0px;
+  font-size: 12px;
+}
+.span-text{
+  color: #337AB7; 
+}
+.span-text:hover{
+  color: #00CCB1;
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
