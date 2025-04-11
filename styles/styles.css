@@ -1,11 +1,12 @@
 body {
   background-color: white;
-  font-family: Work Sans, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 h1 {
   color: #333;
   font-weight: 300;
 }
+
 .header-content {
   padding: 20px;
   text-align: center;
@@ -352,7 +353,9 @@ h1 {
 }
 
 .section-openings-content-cities-item-text-h1{
-  font-family: Roboto;
+  font-family: 'Roboto',
+    Arial,
+    sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-top: 20px;
