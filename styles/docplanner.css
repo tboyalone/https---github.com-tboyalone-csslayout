@@ -7,17 +7,10 @@ h1 {
   font-weight: 300;
 }
 .header-content {
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+
 }
 .nav-list {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
-  margin-right: 200px;
+
 }
 .nav-list a {
   text-decoration: none;
@@ -27,11 +20,10 @@ h1 {
   transition: color 0.3s ease;
 }
 .nav-list li {
-  display: inline;
-  margin-right: 20px;
+
 }
 .nav-list a:hover{
-  font-weight: bold;
+  font-weight: normal;
   color: #00B39B
 }
 .fulllogo{
@@ -51,14 +43,15 @@ h1 {
   flex-direction: column;
 }
 .logo-area-h1{
+  color: #00B39B;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 40px;
   margin-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .logo-area-image {
-  width: 40px;
+  width: 50px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -67,19 +60,22 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.logo-area-content-text{
-  width: 500px;
+/*.logo-area-content-text{
+  min-width: 400px;
   height: auto;
   text-align: left;
-  font-weight: 300;
   margin-right: 20px;
   margin-bottom: 80px;
-}
+}*/
 .section-office {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
+  width: 1150px;
 }
 .section-office-patients,
 .section-office-doctors, 
@@ -87,25 +83,26 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 30px;
   border-radius: 12px; 
+  margin-top: 20px;
 }
 .section-office-patients{
  background-color: #00CCB1;
- height: 360px;
- width: 310px;
+height: 390px;
+  width: 370px;
 }
 
 .section-office-doctors {
   background-color: #3D83DF;
-  height: 360px;
-  width: 290px;
+  height: 390px;
+  width: 320px;
 }
 
 .section-office-clinics {
   background-color: #1B2734;
-  height: 360px;
-  width: 310px;
+  height: 390px;
+  width: 370px;
 }
 
 .section-office-doctors-image,
@@ -166,6 +163,8 @@ h1 {
 
 .logos-area-content{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
@@ -200,6 +199,8 @@ h1 {
 
 .section-statistics {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 0px;
@@ -235,7 +236,8 @@ h1 {
   padding-left: 0px;
   padding-right: 0px;
   margin-right: 50px;
-  padding-top: 75px;
+  padding-top: 60px;
+  margin-bottom: 50px;
 }
 
 .section-statistics-area-content{
@@ -340,8 +342,10 @@ h1 {
   margin-bottom: 120px;
 }
 .section-openings-content-cities{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   grid-gap: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
